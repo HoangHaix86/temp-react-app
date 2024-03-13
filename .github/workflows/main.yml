@@ -10,7 +10,7 @@ jobs:
         with:
           node-version: 20
           cache: 'yarn'
-          cache-dependency-path: subdir/package-lock.json
+          cache-dependency-path: yarn.lock
       - run: npm i -g yarn
       - run: yarn
       - run: yarn build
